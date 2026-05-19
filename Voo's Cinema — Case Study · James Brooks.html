@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://preview-%2Dsublime-single-page.lovable.app/case/voos-cinema -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" as="image" href="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&amp;q=80"><link rel="preload" as="image" href="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&amp;q=80"><link rel="stylesheet" href="./Voo&#39;s Cinema — Case Study · James Brooks_files/styles-BGAk6vI9.css" data-precedence="default"><link rel="stylesheet" href="./Voo&#39;s Cinema — Case Study · James Brooks_files/css2" data-precedence="default"><meta name="author" content="Lovable"><meta name="twitter:site" content="@Lovable"><meta property="og:type" content="website"><link rel="modulepreload" href="https://preview--sublime-single-page.lovable.app/assets/index-D9m6q8DU.js"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+<style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg);
+		color: var(--badge-text);
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow);
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<meta name="twitter:title" content="James Brooks — UI/UX Designer"><meta name="twitter:description" content="Selected UI/UX case studies and product design work by James Brooks."><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cc26c144-62a7-4cdc-a8b2-ad5bfb5f156d/id-preview-7ab9d7ac--9c9834aa-fa07-4360-b169-4d00fcd52613.lovable.app-1779164723887.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cc26c144-62a7-4cdc-a8b2-ad5bfb5f156d/id-preview-7ab9d7ac--9c9834aa-fa07-4360-b169-4d00fcd52613.lovable.app-1779164723887.png"><style></style><title>Voo's Cinema — Case Study · James Brooks</title><meta property="og:title" content="Lovable App"><meta property="og:description" content="Lovable Generated Project"><meta name="twitter:card" content="summary"><meta name="description" content="Voo&#39;s Cinema case study by James Brooks — process, research, design and outcomes."></head><body data-new-gr-c-s-check-loaded="14.1292.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1292.0"><!--$--><!--/$--><script src="./Voo&#39;s Cinema — Case Study · James Brooks_files/lovable.js.download" type="module"></script>
+<aside id="lovable-badge" role="complementary" dir="ltr" lang="en" aria-label="Edit with Lovable">
+	<a id="lovable-badge-cta" target="_blank" href="https://lovable.dev/projects/9c9834aa-fa07-4360-b169-4d00fcd52613?utm_source=lovable-badge" rel="noopener nofollow" aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"></path>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"></path>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"></path>
+  <defs>
+    <radialgradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02"></stop>
+      <stop offset=".394" stop-color="#FE3F21"></stop>
+      <stop offset=".608" stop-color="#F858BC"></stop>
+      <stop offset=".929" stop-color="#575ECF"></stop>
+    </radialgradient>
+  </defs>
+</svg>
+
+
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button id="lovable-badge-close" aria-label="Dismiss" title="Dismiss" type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"></path>
+		</svg>
+	</button>
+</aside>
+<script>
+	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		// the page is in an iframe
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
+
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}
+</script>
+<div class="cs" style="--accent: #FF3D5A;"><style>
+:root {
+  --bg: #FAFAF7; --fg: #0E0E0E; --muted: #6B6B6B;
+  --line: #ECECE6; --card: #FFFFFF; --accent: #FF3D5A;
+}
+.jb-dark { --bg:#0B0B0C; --fg:#F2F2F0; --muted:#9A9A95; --line:#1E1E20; --card:#131315; }
+
+.cs * { box-sizing: border-box; }
+.cs { background: var(--bg); color: var(--fg); font-family: "DM Sans", system-ui, sans-serif; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+.cs h1, .cs h2, .cs h3, .cs h4 { font-family: "Sora", system-ui, sans-serif; letter-spacing: -0.02em; margin: 0; }
+.cs a { color: inherit; text-decoration: none; }
+.cs-container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+/* NAV */
+.cs-nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px); background: color-mix(in oklab, var(--bg) 70%, transparent); border-bottom: 1px solid transparent; transition: border-color .3s, background .3s; }
+.cs-nav.is-scrolled { border-color: var(--line); }
+.cs-nav__inner { max-width: 1180px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.cs-logo { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-family: "Sora", sans-serif; transition: transform .3s; }
+.cs-logo:hover { transform: scale(1.04); }
+.cs-logo__dot { width: 10px; height: 10px; border-radius: 999px; background: var(--accent); transition: transform .35s; }
+.cs-logo:hover .cs-logo__dot { transform: scale(1.4); }
+.cs-nav__links { display: flex; gap: 28px; font-size: 14px; }
+.cs-nav__links a { position: relative; padding: 4px 0; opacity: .8; transition: opacity .25s; }
+.cs-nav__links a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: right; transition: transform .35s cubic-bezier(.6,.05,.2,1); }
+.cs-nav__links a:hover { opacity: 1; }
+.cs-nav__links a:hover::after { transform: scaleX(1); transform-origin: left; }
+.cs-iconbtn { width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--fg); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: transform .25s, background .25s; }
+.cs-iconbtn:hover { transform: rotate(-12deg) scale(1.08); background: var(--accent); color: #fff; border-color: var(--accent); }
+@media (max-width: 720px) { .cs-nav__links { display: none; } }
+
+/* HERO */
+.cs-hero { padding: 60px 0 40px; border-bottom: 1px solid var(--line); position: relative; overflow: hidden; }
+.cs-hero__grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 60px; align-items: center; }
+.cs-pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: color-mix(in oklab, var(--accent) 10%, transparent); color: var(--accent); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+.cs-pill__dot { width: 6px; height: 6px; border-radius: 999px; background: var(--accent); }
+.cs-h1 { font-size: clamp(40px, 7vw, 86px); line-height: .98; font-weight: 700; margin-top: 18px; }
+.cs-h1--sm { font-size: clamp(28px, 4.5vw, 52px); }
+.cs-meta { display: flex; gap: 32px; margin: 28px 0 0; padding-top: 22px; border-top: 1px solid var(--line); }
+.cs-meta div { display: flex; flex-direction: column; gap: 4px; }
+.cs-meta dt { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+.cs-meta dd { margin: 0; font-weight: 600; font-family: "Sora", sans-serif; }
+
+.cs-phones { position: relative; height: 460px; display: flex; align-items: center; justify-content: center; }
+.cs-phone { position: absolute; width: 220px; height: 440px; border-radius: 36px; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(0,0,0,.25); border: 8px solid #0E0E0E; background: #0E0E0E; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.cs-phone img { width: 100%; height: 100%; object-fit: cover; }
+.cs-phone--0 { transform: translateX(-150px) rotate(-8deg); }
+.cs-phone--1 { transform: translateY(-10px) scale(1.05); z-index: 2; }
+.cs-phone--2 { transform: translateX(150px) rotate(8deg); }
+.cs-hero__media:hover .cs-phone--0 { transform: translateX(-170px) rotate(-10deg); }
+.cs-hero__media:hover .cs-phone--2 { transform: translateX(170px) rotate(10deg); }
+.cs-hero__media:hover .cs-phone--1 { transform: translateY(-18px) scale(1.07); }
+@media (max-width: 880px) { .cs-hero__grid { grid-template-columns: 1fr; } .cs-phones { height: 380px; } .cs-phone { width: 170px; height: 340px; } .cs-phone--0 { transform: translateX(-110px) rotate(-8deg); } .cs-phone--2 { transform: translateX(110px) rotate(8deg); } }
+
+/* SECTIONS */
+.cs-section { padding: 80px 0; border-bottom: 1px solid var(--line); }
+.cs-secthead { max-width: 760px; margin-bottom: 40px; }
+.cs-eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); margin: 0 0 10px; }
+.cs-h2 { font-size: clamp(28px, 4.2vw, 48px); font-weight: 700; line-height: 1.02; position: relative; display: inline-block; }
+.cs-h2::after { content: ""; position: absolute; left: 0; bottom: -10px; height: 3px; width: 0; background: var(--accent); transition: width .8s cubic-bezier(.2,.7,.2,1) .2s; border-radius: 2px; }
+.cs-secthead.is-visible .cs-h2::after { width: 56px; }
+.cs-intro { color: var(--muted); margin-top: 26px; font-size: 17px; line-height: 1.6; max-width: 720px; }
+.cs-section-sub { font-family: "Sora", sans-serif; font-weight: 600; font-size: 18px; margin: 0 0 24px; }
+
+/* CARDS */
+.cs-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.cs-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 820px) { .cs-grid-2, .cs-grid-3 { grid-template-columns: 1fr; } }
+.cs-card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s, border-color .35s; }
+.cs-card:hover { transform: translateY(-6px); border-color: color-mix(in oklab, var(--accent) 35%, var(--line)); box-shadow: 0 20px 40px -24px color-mix(in oklab, var(--accent) 35%, transparent); }
+.cs-card__icon { display: inline-flex; width: 40px; height: 40px; align-items: center; justify-content: center; border-radius: 12px; background: color-mix(in oklab, var(--accent) 12%, transparent); color: var(--accent); font-size: 20px; margin-bottom: 14px; transition: transform .35s; }
+.cs-card:hover .cs-card__icon { transform: rotate(-8deg) scale(1.08); }
+.cs-card__title { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+.cs-card__body { color: var(--muted); font-size: 15px; line-height: 1.6; }
+.cs-bul { margin: 0; padding-left: 18px; color: var(--muted); }
+.cs-bul li { margin: 4px 0; }
+
+/* PERSONA */
+.cs-persona { display: grid; grid-template-columns: 1.2fr 1fr; grid-template-rows: auto auto; gap: 22px; }
+.cs-quote-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 32px; transition: transform .35s, box-shadow .35s; }
+.cs-quote-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -24px rgba(0,0,0,.18); }
+.cs-quote { font-family: "Sora", sans-serif; font-size: clamp(22px, 3vw, 30px); margin: 0 0 14px; }
+.cs-muted { color: var(--muted); line-height: 1.6; margin: 0; }
+.cs-tags { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+.cs-tags span { padding: 6px 12px; border-radius: 999px; background: color-mix(in oklab, var(--accent) 10%, transparent); color: var(--accent); font-size: 12px; font-weight: 600; }
+.cs-persona__media { border-radius: 22px; overflow: hidden; background: var(--card); border: 1px solid var(--line); }
+.cs-persona__media img { width: 100%; height: 100%; min-height: 240px; object-fit: cover; transition: transform .6s; }
+.cs-persona__media:hover img { transform: scale(1.05); }
+.cs-persona__cols { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 820px) { .cs-persona, .cs-persona__cols { grid-template-columns: 1fr; } }
+.cs-pcol { padding: 22px; border-radius: 16px; border: 1px solid var(--line); background: var(--card); transition: transform .25s, border-color .25s; }
+.cs-pcol:hover { transform: translateY(-3px); border-color: color-mix(in oklab, var(--accent) 35%, var(--line)); }
+.cs-pcol h4 { font-size: 14px; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin-bottom: 12px; }
+.cs-pcol ul { padding-left: 18px; margin: 0; color: var(--muted); line-height: 1.7; }
+
+/* TABLE */
+.cs-table { display: grid; grid-template-columns: 160px repeat(5, 1fr); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--card); }
+.cs-table__head { padding: 14px 16px; font-family: "Sora", sans-serif; font-weight: 600; font-size: 13px; background: color-mix(in oklab, var(--accent) 8%, transparent); color: var(--accent); border-bottom: 1px solid var(--line); }
+.cs-table__cell { padding: 14px 16px; font-size: 14px; color: var(--fg); border-top: 1px solid var(--line); border-left: 1px solid var(--line); transition: background .25s; }
+.cs-table__cell:hover { background: color-mix(in oklab, var(--accent) 6%, transparent); }
+.cs-table__cell--label { font-weight: 600; color: var(--muted); background: color-mix(in oklab, var(--fg) 3%, transparent); }
+@media (max-width: 820px) { .cs-table { grid-template-columns: 120px repeat(5, minmax(120px, 1fr)); overflow-x: auto; } }
+
+/* WIRE */
+.cs-wire { border-radius: 22px; overflow: hidden; border: 1px solid var(--line); background: var(--card); }
+.cs-wire img { width: 100%; display: block; transition: transform .8s; }
+.cs-wire:hover img { transform: scale(1.02); }
+.cs-wireframes { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+@media (max-width: 820px) { .cs-wireframes { grid-template-columns: repeat(2, 1fr); } }
+.cs-wire-card { border-radius: 14px; overflow: hidden; background: var(--card); border: 1px solid var(--line); aspect-ratio: 9/16; transition: transform .35s, box-shadow .35s; }
+.cs-wire-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
+.cs-wire-card:hover { transform: translateY(-6px); box-shadow: 0 16px 30px -16px rgba(0,0,0,.2); }
+.cs-wire-card:hover img { transform: scale(1.06); }
+
+/* MOCKS */
+.cs-mockgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 820px) { .cs-mockgrid { grid-template-columns: repeat(2, 1fr); } }
+.cs-mock { border-radius: 18px; overflow: hidden; aspect-ratio: 4/3; background: var(--card); border: 1px solid var(--line); transition: transform .35s, box-shadow .35s; }
+.cs-mock img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s; }
+.cs-mock:hover { transform: translateY(-6px); box-shadow: 0 24px 40px -22px rgba(0,0,0,.25); }
+.cs-mock:hover img { transform: scale(1.05); }
+
+/* PROTO */
+.cs-proto { display: grid; grid-template-columns: 320px 1fr; gap: 60px; align-items: center; }
+@media (max-width: 820px) { .cs-proto { grid-template-columns: 1fr; } }
+.cs-proto__phone { width: 280px; height: 560px; border-radius: 40px; overflow: hidden; border: 10px solid #0E0E0E; background: #0E0E0E; box-shadow: 0 40px 60px -30px rgba(0,0,0,.3); transition: transform .6s; margin: 0 auto; }
+.cs-proto__phone:hover { transform: translateY(-8px) scale(1.02); }
+.cs-proto__phone img { width: 100%; height: 100%; object-fit: cover; }
+.cs-checklist { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.cs-checklist li { display: flex; align-items: center; gap: 14px; padding: 14px 18px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; font-size: 15px; transition: transform .25s, padding-left .25s, border-color .25s; }
+.cs-checklist li:hover { transform: translateX(6px); padding-left: 22px; border-color: color-mix(in oklab, var(--accent) 35%, var(--line)); }
+.cs-check { width: 24px; height: 24px; border-radius: 999px; background: var(--accent); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; }
+
+/* CTA */
+.cs-cta { padding: 80px 0 40px; position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
+.cs-cta__inner { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+@media (max-width: 820px) { .cs-cta__inner { grid-template-columns: 1fr; } }
+.cs-cta__title { font-family: "Sora", sans-serif; font-size: clamp(48px, 9vw, 110px); font-weight: 700; color: var(--accent); text-align: right; line-height: 1; }
+.cs-cta__btns { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+.cs-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 999px; font-weight: 600; border: 1px solid var(--line); background: var(--card); transition: transform .25s, background .25s, color .25s, box-shadow .25s; }
+.cs-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 24px -12px rgba(0,0,0,.2); }
+.cs-btn--primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.cs-btn--primary:hover { box-shadow: 0 14px 30px -10px color-mix(in oklab, var(--accent) 60%, transparent); }
+
+.cs-watermark-wrap { margin-top: 60px; overflow: hidden; mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent); }
+.cs-watermark { font-family: "Sora", sans-serif; font-size: clamp(60px, 14vw, 180px); font-weight: 800; -webkit-text-stroke: 1px var(--accent); color: transparent; white-space: nowrap; letter-spacing: -0.03em; animation: csmarquee 26s linear infinite; }
+@keyframes csmarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* FOOT */
+.cs-foot { padding: 28px 0; }
+.cs-foot__inner { display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: 14px; }
+.cs-arrowlink { color: var(--accent); font-weight: 600; transition: transform .25s; display: inline-flex; }
+.cs-arrowlink:hover { transform: translateX(-4px); }
+
+/* REVEAL */
+[data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+[data-reveal].is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+  [data-reveal] { opacity: 1; transform: none; }
+}
+</style><header class="cs-nav "><div class="cs-nav__inner"><a href="https://preview--sublime-single-page.lovable.app/" class="cs-logo"><span class="cs-logo__dot"></span> jbrooks</a><nav class="cs-nav__links"><a href="https://preview--sublime-single-page.lovable.app/#works">Overview</a><a href="https://preview--sublime-single-page.lovable.app/case/voos-cinema#research">Research</a><a href="https://preview--sublime-single-page.lovable.app/case/voos-cinema#mockups">Mockups</a><a href="https://preview--sublime-single-page.lovable.app/case/voos-cinema#outcome">Outcome</a><a href="https://preview--sublime-single-page.lovable.app/case/voos-cinema#contact">Contact</a></nav><div class="cs-nav__right"><button class="cs-iconbtn" aria-label="Toggle dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="18" height="18"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg></button></div></div></header><section class="cs-hero"><div class="cs-container cs-hero__grid"><div data-reveal="true" class="is-visible"><span class="cs-pill"><span class="cs-pill__dot"></span> iOS App</span><h1 class="cs-h1">Voo's Cinema</h1><dl class="cs-meta"><div><dt>Role</dt><dd>UI/UX Designer</dd></div><div><dt>Duration</dt><dd>6 Weeks</dd></div><div><dt>Year</dt><dd>2024</dd></div></dl></div><div class="cs-hero__media is-visible" data-reveal="true"><div class="cs-phones"><div class="cs-phone cs-phone--0"><img alt="" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1574375927938-d5a98e8ffe85"></div><div class="cs-phone cs-phone--1"><img alt="" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1574375927938-d5a98e8ffe85"></div><div class="cs-phone cs-phone--2"><img alt="" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1574375927938-d5a98e8ffe85"></div></div></div></div></section><section class="cs-section"><div class="cs-container"><div class="cs-secthead" data-reveal="true"><p class="cs-eyebrow">Beginning of a project</p><h2 class="cs-h2">Project Overview</h2><p class="cs-intro">The most notable starting sign is designed to deliver an intuitive, gorgeous experience for moviegoers in the cinema booking. Built around comfort, ease and visual clarity throughout each interaction.</p></div><div class="cs-grid-2"><div class="cs-card" data-reveal="true"><span class="cs-card__icon">🎯</span><h3 class="cs-card__title">Problem</h3><div class="cs-card__body">Users were lost when browsing showtimes and seat layouts. The journey from picking a film to confirming a seat felt heavy and confusing.</div></div><div class="cs-card" data-reveal="true"><span class="cs-card__icon">✅</span><h3 class="cs-card__title">Goal</h3><div class="cs-card__body">Design an experience that makes booking a movie ticket calm, fast and confident — without losing the cinematic feel.</div></div><div class="cs-card" data-reveal="true"><span class="cs-card__icon">🚀</span><h3 class="cs-card__title">Mission</h3><div class="cs-card__body">Empower people to spend less time fiddling with UI and more time enjoying the film they're about to see.</div></div><div class="cs-card" data-reveal="true"><span class="cs-card__icon">🧭</span><h3 class="cs-card__title">Approach</h3><div class="cs-card__body"><ul class="cs-bul"><li>Discover &amp; define</li><li>Research &amp; synthesize</li><li>Design &amp; prototype</li><li>Test &amp; iterate</li></ul></div></div></div></div></section><section id="research" class="cs-section"><div class="cs-container"><div class="cs-secthead" data-reveal="true"><p class="cs-eyebrow">Studying real needs</p><h2 class="cs-h2">User Research</h2><p class="cs-intro">We conducted in-depth interviews and surveys to understand the real pain points, expectations and rituals of cinema-goers across age groups.</p></div><div class="cs-grid-3"><div class="cs-card" data-reveal="true"><span class="cs-card__icon">⚠️</span><h3 class="cs-card__title">Pain Points</h3><div class="cs-card__body">Confusing seat maps, broken filters and slow checkout were the most frequent complaints across all sessions.</div></div><div class="cs-card" data-reveal="true"><span class="cs-card__icon">👥</span><h3 class="cs-card__title">Stakeholders</h3><div class="cs-card__body">15 active moviegoers, 3 cinema staff, and 2 product owners helped shape the priorities.</div></div><div class="cs-card" data-reveal="true"><span class="cs-card__icon">✨</span><h3 class="cs-card__title">Familiar things</h3><div class="cs-card__body">Patterns users already loved from Netflix, Apple TV and Letterboxd were used as design anchors.</div></div></div></div></section><section class="cs-section"><div class="cs-container"><div class="cs-secthead" data-reveal="true"><p class="cs-eyebrow">A face behind the data</p><h2 class="cs-h2">User Persona</h2></div><div class="cs-persona"><div class="cs-quote-card" data-reveal="true"><p class="cs-quote">"Living an interesting life"</p><p class="cs-muted">Sarah is a marketing lead who unwinds with cinema every weekend. She values speed, beautiful UI and not being interrupted while she scrolls.</p><div class="cs-tags"><span>Goals</span><span>Frustrations</span><span>Quotes</span></div></div><div class="cs-persona__media" data-reveal="true"><img alt="persona" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1531123897727-8f129e1688ce"></div><div class="cs-persona__cols"><div class="cs-pcol" data-reveal="true"><h4>Goals</h4><ul><li>Book in under a minute</li><li>See trailers in-app</li><li>Save favourite cinemas</li></ul></div><div class="cs-pcol" data-reveal="true"><h4>Frustrations</h4><ul><li>Slow load times</li><li>Hidden fees</li><li>Seat map confusion</li></ul></div><div class="cs-pcol" data-reveal="true"><h4>Quotes</h4><ul><li>“I just want to watch — not fight the app.”</li></ul></div></div></div></div></section><section class="cs-section"><div class="cs-container"><div class="cs-secthead" data-reveal="true"><p class="cs-eyebrow">A trip we mapped</p><h2 class="cs-h2">User Journey Map</h2></div><div class="cs-table" data-reveal="true"><div class="cs-table__head">Goal</div><div class="cs-table__head">Discover</div><div class="cs-table__head">Decide</div><div class="cs-table__head">Book</div><div class="cs-table__head">Watch</div><div class="cs-table__head">Recall</div><div class="cs-table__cell cs-table__cell--label">Stage</div><div class="cs-table__cell ">Browse list</div><div class="cs-table__cell ">Compare options</div><div class="cs-table__cell ">Pick seats</div><div class="cs-table__cell ">Arrive at cinema</div><div class="cs-table__cell ">Rate film</div><div class="cs-table__cell cs-table__cell--label">Action</div><div class="cs-table__cell ">Scroll feed</div><div class="cs-table__cell ">Read details</div><div class="cs-table__cell ">Pay</div><div class="cs-table__cell ">Show ticket</div><div class="cs-table__cell ">Share with friends</div><div class="cs-table__cell cs-table__cell--label">Emotion</div><div class="cs-table__cell ">Curious</div><div class="cs-table__cell ">Hopeful</div><div class="cs-table__cell ">Tense</div><div class="cs-table__cell ">Excited</div><div class="cs-table__cell ">Reflective</div><div class="cs-table__cell cs-table__cell--label">Pain</div><div class="cs-table__cell ">Too many films</div><div class="cs-table__cell ">Reviews scattered</div><div class="cs-table__cell ">Slow checkout</div><div class="cs-table__cell ">QR not loading</div><div class="cs-table__cell ">Forgetting the title</div><div class="cs-table__cell cs-table__cell--label">Opportunity</div><div class="cs-table__cell ">Personalised feed</div><div class="cs-table__cell ">Aggregate reviews</div><div class="cs-table__cell ">Apple Pay</div><div class="cs-table__cell ">Offline ticket</div><div class="cs-table__cell ">One-tap rate</div></div></div></section><section class="cs-section"><div class="cs-container"><div class="cs-secthead" data-reveal="true"><p class="cs-eyebrow">Structure</p><h2 class="cs-h2">App Map</h2><p class="cs-intro">A clear information architecture so users always know where they are and what's next.</p></div><div class="cs-wire" data-reveal="true"><img alt="app map" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1561070791-2526d30994b8"></div></div></section><section class="cs-section"><div class="cs-container"><div class="cs-secthead" data-reveal="true"><p class="cs-eyebrow">Sketches</p><h2 class="cs-h2">Digital Wireframes</h2><p class="cs-intro">Low-fidelity screens to validate the flow before investing in pixels.</p></div><div class="cs-wireframes"><div class="cs-wire-card" data-reveal="true"><img alt="wireframe" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1545235617-7a424c1a60cc"></div><div class="cs-wire-card" data-reveal="true"><img alt="wireframe" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1545235617-7a424c1a60cc(1)"></div><div class="cs-wire-card" data-reveal="true"><img alt="wireframe" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1545235617-7a424c1a60cc(2)"></div><div class="cs-wire-card" data-reveal="true"><img alt="wireframe" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1545235617-7a424c1a60cc(3)"></div><div class="cs-wire-card" data-reveal="true"><img alt="wireframe" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1545235617-7a424c1a60cc(4)"></div></div></div></section><section class="cs-section"><div class="cs-container"><div class="cs-secthead" data-reveal="true"><p class="cs-eyebrow">Testing the flow</p><h2 class="cs-h2">Usability Studies</h2><p class="cs-intro">We invited 8 participants to complete five core tasks. Findings drove three rounds of iteration.</p></div><div class="cs-grid-3"><div class="cs-card" data-reveal="true"><span class="cs-card__icon">🧪</span><h3 class="cs-card__title">Admin Review</h3><div class="cs-card__body">Internal feedback uncovered three blocking issues in checkout that were resolved before testing.</div></div><div class="cs-card" data-reveal="true"><span class="cs-card__icon">🧭</span><h3 class="cs-card__title">Made Smooth</h3><div class="cs-card__body">Re-organised the seat selection so the action area sits within thumb reach on every device.</div></div><div class="cs-card" data-reveal="true"><span class="cs-card__icon">🎉</span><h3 class="cs-card__title">Better Discovery</h3><div class="cs-card__body">A reworked home feed lifted session length by 38% in the second prototype.</div></div></div></div></section><section id="mockups" class="cs-section"><div class="cs-container"><div class="cs-secthead" data-reveal="true"><p class="cs-eyebrow">Final pixels</p><h2 class="cs-h2">Refining Design</h2><p class="cs-intro">Final visual identity, components, motion and accessibility passes — wrapping the experience.</p></div><div class="cs-section-sub">Mockups</div><div class="cs-mockgrid"><div class="cs-mock" data-reveal="true"><img alt="" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1574375927938-d5a98e8ffe85(1)"></div><div class="cs-mock" data-reveal="true"><img alt="" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1574375927938-d5a98e8ffe85(2)"></div><div class="cs-mock" data-reveal="true"><img alt="" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1574375927938-d5a98e8ffe85(3)"></div><div class="cs-mock" data-reveal="true"><img alt="" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1574375927938-d5a98e8ffe85(4)"></div><div class="cs-mock" data-reveal="true"><img alt="" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1574375927938-d5a98e8ffe85(5)"></div><div class="cs-mock" data-reveal="true"><img alt="" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1574375927938-d5a98e8ffe85(6)"></div></div></div></section><section class="cs-section"><div class="cs-container"><div class="cs-secthead" data-reveal="true"><p class="cs-eyebrow">In motion</p><h2 class="cs-h2">High fidelity prototype</h2><p class="cs-intro">Interactive prototype built in Figma with realistic data, micro-interactions and transitions.</p></div><div class="cs-proto"><div class="cs-proto__phone" data-reveal="true"><img alt="prototype" src="./Voo&#39;s Cinema — Case Study · James Brooks_files/photo-1574375927938-d5a98e8ffe85"></div><ul class="cs-checklist" data-reveal="true"><li><span class="cs-check">✓</span> Onboarding in three taps</li><li><span class="cs-check">✓</span> Personalised recommendations</li><li><span class="cs-check">✓</span> Apple Pay checkout</li><li><span class="cs-check">✓</span> Live seat availability</li><li><span class="cs-check">✓</span> Offline ticket wallet</li><li><span class="cs-check">✓</span> Post-film rating loop</li></ul></div></div></section><section id="outcome" class="cs-section"><div class="cs-container"><div class="cs-secthead" data-reveal="true"><p class="cs-eyebrow">The good outcomes</p><h2 class="cs-h2">Outcome</h2><p class="cs-intro">Internal review confirmed the redesign hit every key metric. A short pilot study showed users completed the full flow 42% faster than the previous experience.</p></div><div class="cs-grid-2"><div class="cs-card" data-reveal="true"><span class="cs-card__icon">💡</span><h3 class="cs-card__title">Takeaways</h3><div class="cs-card__body">The smallest moments — a loading state, a haptic — carried the biggest emotional weight in user reviews.</div></div><div class="cs-card" data-reveal="true"><span class="cs-card__icon">📈</span><h3 class="cs-card__title">Impact</h3><div class="cs-card__body">Test users completed booking 42% faster and rated overall confidence in the flow at 4.7/5.</div></div><div class="cs-card" data-reveal="true"><span class="cs-card__icon">📚</span><h3 class="cs-card__title">What I learnt</h3><div class="cs-card__body">Constraints are a feature. Removing options at the right moments made the whole product feel calmer.</div></div><div class="cs-card" data-reveal="true"><span class="cs-card__icon">➡️</span><h3 class="cs-card__title">Next Steps</h3><div class="cs-card__body">Ship a beta with one cinema partner, instrument funnels and iterate based on first-week behavioural data.</div></div></div></div></section><section id="contact" class="cs-cta"><div class="cs-container cs-cta__inner" data-reveal="true"><div><p class="cs-eyebrow">Thinking of a project?</p><h2 class="cs-h1 cs-h1--sm">Let me help with a great<br>visual solution for your business.</h2><div class="cs-cta__btns"><a href="mailto:hello@jamesbrooks.com" class="cs-btn cs-btn--primary">Book a Call</a><a href="mailto:hello@jamesbrooks.com" class="cs-btn">Send Message</a></div></div><div class="cs-cta__title">Contact Me</div></div><div class="cs-watermark-wrap"><div class="cs-watermark">hello@jamesbrooks.com</div></div></section><footer class="cs-foot"><div class="cs-container cs-foot__inner"><a href="https://preview--sublime-single-page.lovable.app/" class="cs-arrowlink">← Back to all works</a><span>© 2026 James Brooks</span></div></footer></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

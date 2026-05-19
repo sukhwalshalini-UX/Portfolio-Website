@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://preview-%2Dsublime-single-page.lovable.app/ -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" as="image" href="./James Brooks — UI_UX Designer Portfolio_files/photo-1531123897727-8f129e1688ce"><link rel="preload" as="image" href="./James Brooks — UI_UX Designer Portfolio_files/photo-1500648767791-00dcc994a43e"><link rel="stylesheet" href="./James Brooks — UI_UX Designer Portfolio_files/styles-BGAk6vI9.css" data-precedence="default"><link rel="stylesheet" href="./James Brooks — UI_UX Designer Portfolio_files/css2" data-precedence="default"><meta name="author" content="Lovable"><meta name="twitter:site" content="@Lovable"><meta property="og:type" content="website"><link rel="modulepreload" href="https://preview--sublime-single-page.lovable.app/assets/index-D9m6q8DU.js"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+<style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg);
+		color: var(--badge-text);
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow);
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<meta name="twitter:title" content="James Brooks — UI/UX Designer"><meta name="twitter:description" content="Selected UI/UX case studies and product design work by James Brooks."><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cc26c144-62a7-4cdc-a8b2-ad5bfb5f156d/id-preview-7ab9d7ac--9c9834aa-fa07-4360-b169-4d00fcd52613.lovable.app-1779164723887.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cc26c144-62a7-4cdc-a8b2-ad5bfb5f156d/id-preview-7ab9d7ac--9c9834aa-fa07-4360-b169-4d00fcd52613.lovable.app-1779164723887.png"><style></style><title>James Brooks — UI/UX Designer Portfolio</title><meta name="description" content="James Brooks — Senior UI/UX designer crafting premium product experiences for ambitious teams. Selected case studies, skills, and ways to get in touch."><meta property="og:title" content="James Brooks — UI/UX Designer"><meta property="og:description" content="Selected UI/UX case studies and product design work by James Brooks."><meta name="twitter:card" content="summary_large_image"><link rel="modulepreload" href="https://preview--sublime-single-page.lovable.app/assets/index-CQF1db9F.js"></head><body data-new-gr-c-s-check-loaded="14.1292.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1292.0"><!--$--><!--/$--><script src="./James Brooks — UI_UX Designer Portfolio_files/lovable.js.download" type="module"></script>
+<aside id="lovable-badge" role="complementary" dir="ltr" lang="en" aria-label="Edit with Lovable">
+	<a id="lovable-badge-cta" target="_blank" href="https://lovable.dev/projects/9c9834aa-fa07-4360-b169-4d00fcd52613?utm_source=lovable-badge" rel="noopener nofollow" aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"></path>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"></path>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"></path>
+  <defs>
+    <radialgradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02"></stop>
+      <stop offset=".394" stop-color="#FE3F21"></stop>
+      <stop offset=".608" stop-color="#F858BC"></stop>
+      <stop offset=".929" stop-color="#575ECF"></stop>
+    </radialgradient>
+  </defs>
+</svg>
+
+
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button id="lovable-badge-close" aria-label="Dismiss" title="Dismiss" type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"></path>
+		</svg>
+	</button>
+</aside>
+<script>
+	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		// the page is in an iframe
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
+
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}
+</script>
+<div class="jb"><style>
+.jb {
+  --bg: #fafaf7;
+  --surface: #ffffff;
+  --text: #0e0e0e;
+  --muted: #6b6b6b;
+  --line: rgba(0,0,0,0.08);
+  --accent: #ff3d5a;
+  --accent-soft: #ffe7ec;
+  --maxw: 1180px;
+  --radius: 18px;
+  --shadow: 0 10px 40px -20px rgba(0,0,0,0.25);
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+html { scroll-behavior: smooth; }
+.jb-dark .jb {
+  --bg: #0b0b0c;
+  --surface: #141416;
+  --text: #f2f2f0;
+  --muted: #9a9a9a;
+  --line: rgba(255,255,255,0.10);
+  --accent: #ff5a73;
+  --accent-soft: rgba(255,90,115,0.15);
+  --shadow: 0 10px 40px -20px rgba(0,0,0,0.7);
+}
+.jb * { box-sizing: border-box; }
+.jb a { color: inherit; text-decoration: none; }
+.jb img { display: block; max-width: 100%; }
+
+.jb-container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+/* Typography */
+.jb-display, .jb-h1, .jb-h2, .jb-h3 {
+  font-family: 'Sora', sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  font-weight: 600;
+  margin: 0;
+}
+.jb-display { font-size: clamp(40px, 6vw, 72px); font-weight: 700; }
+.jb-h1 { font-size: clamp(32px, 4.4vw, 52px); }
+.jb-h2 { font-size: clamp(26px, 3vw, 38px); }
+.jb-h3 { font-size: 20px; font-weight: 600; }
+.jb-accent { color: var(--accent); }
+.jb-muted { color: var(--muted); margin: 0; }
+.jb-eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+.jb-meta-title { margin: 0; font-weight: 600; font-size: 14px; }
+
+/* NAV */
+.jb-nav {
+  position: sticky; top: 0; z-index: 50;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: color-mix(in oklab, var(--bg) 75%, transparent);
+  transition: box-shadow .3s, background .3s, border-color .3s;
+  border-bottom: 1px solid transparent;
+}
+.jb-nav.is-scrolled { border-color: var(--line); box-shadow: 0 4px 20px -16px rgba(0,0,0,.3); }
+.jb-nav__inner {
+  max-width: var(--maxw); margin: 0 auto; padding: 14px 24px;
+  display: flex; align-items: center; gap: 24px;
+}
+.jb-logo { display: inline-flex; align-items: center; gap: 8px; font-family: 'Sora'; font-weight: 700; letter-spacing: -0.02em; }
+.jb-logo__dot { width: 10px; height: 10px; border-radius: 999px; background: var(--accent); display: inline-block; }
+.jb-nav__links { display: flex; gap: 28px; margin-left: 32px; font-size: 14px; }
+.jb-nav__links a { color: var(--muted); transition: color .2s; position: relative; padding: 4px 0; }
+.jb-nav__links a::after {
+  content: ""; position: absolute; left: 0; bottom: -2px; height: 1px; width: 100%;
+  background: var(--text); transform: scaleX(0); transform-origin: right;
+  transition: transform .35s cubic-bezier(.6,.05,.2,1);
+}
+.jb-nav__links a:hover { color: var(--text); }
+.jb-nav__links a:hover::after { transform: scaleX(1); transform-origin: left; }
+.jb-nav__right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+.jb-logo { transition: transform .3s ease; }
+.jb-logo:hover { transform: scale(1.04); }
+.jb-logo:hover .jb-logo__dot { animation: jbpulse 1.2s ease-in-out infinite; }
+@keyframes jbpulse {
+  0%,100% { transform: scale(1); box-shadow: 0 0 0 0 color-mix(in oklab, var(--accent) 50%, transparent); }
+  50% { transform: scale(1.4); box-shadow: 0 0 0 8px transparent; }
+}
+
+.jb-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 18px; border-radius: 999px;
+  font-size: 14px; font-weight: 600;
+  border: 1px solid transparent;
+  transition: transform .2s ease, background .25s, color .25s, border-color .25s, box-shadow .25s;
+  cursor: pointer;
+}
+.jb-btn:hover { transform: translateY(-2px); }
+.jb-btn:active { transform: translateY(0); }
+.jb-btn--primary { background: var(--accent); color: #fff; box-shadow: 0 6px 18px -8px color-mix(in oklab, var(--accent) 80%, transparent); }
+.jb-btn--primary:hover { background: #e8334e; box-shadow: 0 14px 30px -10px color-mix(in oklab, var(--accent) 70%, transparent); }
+.jb-btn--ghost { background: transparent; color: var(--text); border-color: var(--line); }
+.jb-btn--ghost:hover { border-color: var(--text); background: color-mix(in oklab, var(--text) 6%, transparent); }
+.jb-btn--ghost-dark { background: transparent; color: #fff; border-color: rgba(255,255,255,.3); }
+.jb-btn--ghost-dark:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+.jb-iconbtn {
+  width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+  color: var(--text); cursor: pointer; transition: transform .3s ease, background .2s, border-color .2s, color .2s;
+}
+.jb-iconbtn:hover { transform: rotate(-12deg) scale(1.08); color: var(--accent); border-color: var(--accent); }
+
+.jb-hide-sm { }
+.jb-show-sm { display: none; }
+@media (max-width: 768px) {
+  .jb-nav__links { display: none; }
+  .jb-hide-sm { display: none; }
+  .jb-show-sm { display: inline-flex; }
+}
+.jb-mobile-menu {
+  display: flex; flex-direction: column; gap: 14px;
+  padding: 18px 24px 22px; border-top: 1px solid var(--line);
+  background: var(--bg);
+}
+.jb-mobile-menu a { font-size: 16px; }
+
+/* HERO */
+.jb-hero { padding: 80px 0 60px; }
+.jb-hero__grid {
+  display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;
+}
+@media (max-width: 900px) { .jb-hero__grid { grid-template-columns: 1fr; gap: 36px; } }
+.jb-hero__copy { max-width: 640px; }
+.jb-hero__meta {
+  display: flex; align-items: center; gap: 18px; margin-top: 32px; flex-wrap: wrap;
+  padding-top: 28px; border-top: 1px solid var(--line);
+}
+.jb-avatar { width: 44px; height: 44px; border-radius: 999px; object-fit: cover; }
+.jb-arrowlink {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 600; font-size: 14px; margin-left: auto;
+  border-bottom: 1px solid transparent; transition: border-color .2s, gap .2s;
+}
+.jb-arrowlink:hover { border-color: var(--text); gap: 12px; }
+
+/* Hero orbit */
+.jb-hero__art {
+  height: 420px; position: relative;
+  display: flex; align-items: center; justify-content: center;
+}
+.jb-orbit { position: relative; width: 360px; height: 360px; }
+.jb-orbit__ring {
+  position: absolute; inset: 0; border-radius: 50%;
+  border: 1px dashed var(--line);
+  animation: jbspin 30s linear infinite;
+}
+.jb-orbit__ring--2 { inset: 40px; animation-duration: 22s; animation-direction: reverse; }
+.jb-orbit__ring--3 { inset: 80px; animation-duration: 18s; }
+.jb-orbit__core {
+  position: absolute; inset: 130px; border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, var(--accent-soft), var(--surface));
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+@keyframes jbspin { to { transform: rotate(360deg); } }
+.jb-tag {
+  position: absolute; padding: 6px 14px; font-size: 12px; font-weight: 600;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 999px; box-shadow: var(--shadow);
+}
+.jb-tag--a { top: 8%; left: 12%; color: var(--accent); }
+.jb-tag--b { top: 18%; right: 4%; }
+.jb-tag--c { bottom: 14%; left: -4%; }
+.jb-tag--d { bottom: 6%; right: 14%; color: var(--accent); }
+
+/* Sections */
+.jb-section { padding: 100px 0; }
+.jb-section--tight { padding: 60px 0; }
+.jb-secthead { text-align: center; margin-bottom: 60px; }
+
+/* Works */
+.jb-works { display: flex; flex-direction: column; gap: 100px; }
+.jb-work {
+  display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;
+}
+.jb-work:nth-child(even) { direction: rtl; }
+.jb-work:nth-child(even) > * { direction: ltr; }
+@media (max-width: 900px) {
+  .jb-work, .jb-work:nth-child(even) { direction: ltr; grid-template-columns: 1fr; gap: 32px; }
+}
+.jb-work__copy { max-width: 440px; }
+.jb-work__copy .jb-h2 { margin: 14px 0 16px; }
+.jb-work__copy .jb-arrowlink { margin: 24px 0 0; }
+.jb-pill {
+  display: inline-block; padding: 6px 12px; font-size: 12px; font-weight: 600;
+  border-radius: 999px; background: var(--accent-soft); color: var(--accent);
+}
+.jb-work__media {
+  position: relative; border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--surface), color-mix(in oklab, var(--accent-soft) 60%, var(--surface)));
+  padding: 40px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line);
+  transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s;
+}
+.jb-work__media:hover { transform: translateY(-6px); box-shadow: 0 30px 60px -28px rgba(0,0,0,.35); }
+.jb-work__media img { border-radius: 14px; width: 100%; height: 380px; object-fit: cover; }
+.jb-work__media--phone img { height: 460px; max-width: 280px; margin: 0 auto; border-radius: 36px; }
+.jb-work__media--desktop img { height: 320px; }
+.jb-work__media img { transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.jb-work__media:hover img { transform: scale(1.03); }
+.jb-work__overlay {
+  position: absolute; left: 20px; bottom: 20px;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border-radius: 999px;
+  background: var(--accent); color: #fff; font-size: 13px; font-weight: 600;
+  opacity: 0; transform: translateY(14px);
+  transition: opacity .4s cubic-bezier(.2,.7,.2,1), transform .4s cubic-bezier(.2,.7,.2,1), gap .3s;
+  box-shadow: 0 12px 30px -10px color-mix(in oklab, var(--accent) 70%, transparent);
+  pointer-events: none;
+}
+.jb-work__media:hover .jb-work__overlay { opacity: 1; transform: translateY(0); }
+.jb-work__media:hover .jb-work__overlay { gap: 12px; }
+.jb-work__shine {
+  position: absolute; inset: 0; pointer-events: none; border-radius: var(--radius);
+  background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,.35) 50%, transparent 70%);
+  transform: translateX(-120%); transition: transform .9s cubic-bezier(.2,.7,.2,1);
+}
+.jb-dark .jb-work__shine { background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,.08) 50%, transparent 70%); }
+.jb-work__media:hover .jb-work__shine { transform: translateX(120%); }
+
+/* Other works */
+.jb-other {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;
+}
+@media (max-width: 900px) { .jb-other { grid-template-columns: repeat(2, 1fr); } }
+.jb-tile {
+  border-radius: 14px; overflow: hidden; border: 1px solid var(--line);
+  background: var(--surface); position: relative; aspect-ratio: 1/1; display: block;
+  transition: transform .4s ease, box-shadow .4s ease, border-color .3s;
+}
+.jb-tile:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -20px rgba(0,0,0,.3); border-color: var(--accent); }
+.jb-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.2,.7,.2,1); }
+.jb-tile:hover img { transform: scale(1.08); }
+.jb-tile span {
+  position: absolute; left: 14px; bottom: 12px; font-size: 13px; font-weight: 600; color: #fff;
+  background: rgba(0,0,0,0.45); padding: 6px 10px; border-radius: 999px; backdrop-filter: blur(6px);
+  transition: background .3s, transform .3s;
+}
+.jb-tile:hover span { background: var(--accent); transform: translateY(-2px); }
+.jb-tile__arrow {
+  position: absolute; top: 12px; right: 12px;
+  width: 34px; height: 34px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--accent); color: #fff;
+  opacity: 0; transform: translate(8px, -8px) rotate(-25deg);
+  transition: opacity .35s ease, transform .4s cubic-bezier(.2,.7,.2,1);
+  box-shadow: 0 10px 24px -8px color-mix(in oklab, var(--accent) 70%, transparent);
+}
+.jb-tile:hover .jb-tile__arrow { opacity: 1; transform: translate(0,0) rotate(0deg); }
+
+/* Skills */
+.jb-skills { display: grid; grid-template-columns: 1.4fr 1fr; gap: 60px; }
+@media (max-width: 900px) { .jb-skills { grid-template-columns: 1fr; gap: 40px; } }
+.jb-skills__col { display: flex; flex-direction: column; gap: 36px; }
+.jb-skill { padding-bottom: 28px; border-bottom: 1px solid var(--line); transition: transform .3s ease; }
+.jb-skill:hover { transform: translateX(6px); }
+.jb-skill:hover .jb-skill__icon { transform: rotate(-8deg) scale(1.08); }
+.jb-skill__icon {
+  width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center;
+  background: var(--accent-soft); color: var(--accent); font-size: 22px; margin-bottom: 16px;
+  transition: transform .35s cubic-bezier(.2,.7,.2,1);
+}
+.jb-skill h4 { margin: 0 0 8px; }
+.jb-tools { display: grid; gap: 28px; }
+.jb-tools__group ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.jb-tools__group li { display: flex; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); font-weight: 500; font-size: 15px; transition: padding .25s, color .25s; }
+.jb-tools__group li:hover { padding-left: 8px; color: var(--accent); }
+.jb-tools__group li span { color: var(--accent); }
+
+/* Quotes */
+.jb-quotes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+@media (max-width: 900px) { .jb-quotes { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .jb-quotes { grid-template-columns: 1fr; } }
+.jb-quote {
+  margin: 0; padding: 22px; border: 1px solid var(--line); border-radius: 14px;
+  background: var(--surface); display: flex; flex-direction: column; gap: 18px;
+  transition: transform .35s ease, box-shadow .35s ease, border-color .3s;
+}
+.jb-quote:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -22px rgba(0,0,0,.35); border-color: color-mix(in oklab, var(--accent) 40%, var(--line)); }
+.jb-quote blockquote { margin: 0; font-size: 14px; line-height: 1.55; }
+.jb-quote figcaption { display: flex; gap: 12px; align-items: center; }
+.jb-quote__avatar {
+  width: 36px; height: 36px; border-radius: 999px; display: flex; align-items: center; justify-content: center;
+  background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: 12px;
+  transition: transform .35s ease;
+}
+.jb-quote:hover .jb-quote__avatar { transform: scale(1.1) rotate(-6deg); }
+
+/* CV strip */
+.jb-cv { background: #4a0f1e; color: #fff; padding: 22px 0; }
+.jb-dark .jb-cv { background: #2a0710; }
+.jb-cv__inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-family: 'Sora'; font-weight: 500; }
+.jb-cv__label {
+  display: inline-block; background: rgba(255,255,255,0.12); padding: 4px 10px; border-radius: 6px;
+  font-size: 12px; letter-spacing: .1em; margin-right: 10px;
+}
+
+/* About */
+.jb-about { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: start; }
+@media (max-width: 900px) { .jb-about { grid-template-columns: 1fr; gap: 40px; } }
+.jb-about__intro { display: flex; flex-direction: column; gap: 24px; }
+.jb-about__photo { width: 100%; max-width: 260px; border-radius: 18px; aspect-ratio: 1/1; object-fit: cover; }
+.jb-about__body { display: flex; flex-direction: column; gap: 18px; max-width: 540px; }
+.jb-jobs { margin-top: 16px; border-top: 1px solid var(--line); padding-top: 16px; }
+.jb-jobs__row {
+  display: grid; grid-template-columns: 1.4fr 1fr 0.8fr; gap: 12px;
+  padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 14px; font-weight: 500;
+  transition: padding .25s ease, color .25s ease;
+}
+.jb-jobs__row:hover { padding-left: 10px; color: var(--accent); }
+.jb-about__photo { transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s; }
+.jb-about__photo:hover { transform: scale(1.02) rotate(-1deg); box-shadow: 0 30px 50px -25px rgba(0,0,0,.4); }
+
+/* Contact */
+.jb-contact {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+  padding: 40px 0;
+}
+@media (max-width: 900px) { .jb-contact { grid-template-columns: 1fr; gap: 32px; } }
+.jb-contact__title { font-family: 'Sora'; font-size: 28px; font-weight: 600; margin: 0 0 18px; }
+.jb-contact__buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+.jb-contact__or { margin: 18px 0 8px; font-size: 13px; }
+.jb-contact__socials { display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; font-weight: 500; }
+.jb-contact__socials a { border-bottom: 1px solid var(--line); padding-bottom: 2px; transition: border-color .2s; }
+.jb-contact__socials a:hover { border-color: var(--text); }
+.jb-watermark {
+  font-family: 'Sora'; font-weight: 700; letter-spacing: -0.03em;
+  font-size: clamp(40px, 9vw, 120px); margin: 40px 0 0; text-align: center;
+  color: transparent; -webkit-text-stroke: 1px var(--line);
+  white-space: nowrap; overflow: hidden;
+  transition: -webkit-text-stroke-color .4s, color .4s, letter-spacing .6s;
+}
+.jb-watermark:hover { -webkit-text-stroke-color: var(--accent); color: color-mix(in oklab, var(--accent) 8%, transparent); letter-spacing: -0.01em; }
+.jb-watermark-wrap {
+  margin-top: 40px; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+.jb-watermark-wrap .jb-watermark {
+  margin: 0; display: inline-block; padding-left: 0;
+  animation: jbmarquee 28s linear infinite;
+}
+.jb-watermark-wrap:hover .jb-watermark { animation-play-state: paused; }
+@keyframes jbmarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Wave on Hire Me */
+.jb-wave { display: inline-block; transform-origin: 70% 70%; transition: transform .3s; }
+.jb-btn--primary:hover .jb-wave { animation: jbwave 1.2s ease-in-out infinite; }
+@keyframes jbwave {
+  0%,60%,100% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+}
+
+/* Magnetic */
+[data-magnetic] { transition: transform .25s cubic-bezier(.2,.7,.2,1), background .25s, color .25s, border-color .25s, box-shadow .25s; will-change: transform; }
+
+/* Section heading underline draw */
+.jb-secthead .jb-h1 { position: relative; display: inline-block; }
+.jb-secthead .jb-h1::after {
+  content: ""; position: absolute; left: 50%; bottom: -10px;
+  width: 0; height: 3px; background: var(--accent); border-radius: 999px;
+  transition: width .8s cubic-bezier(.2,.7,.2,1), left .8s cubic-bezier(.2,.7,.2,1);
+}
+.jb-secthead.is-visible .jb-h1::after { width: 56px; left: calc(50% - 28px); }
+
+/* Footer */
+.jb-footer { padding: 30px 0 50px; border-top: 1px solid var(--line); }
+.jb-footer__inner { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; }
+
+/* Reveal */
+[data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity .8s ease, transform .8s ease; }
+[data-reveal].is-visible { opacity: 1; transform: none; }
+
+/* Hero floats */
+.jb-avatar { transition: transform .35s ease; }
+.jb-hero__meta:hover .jb-avatar { transform: scale(1.08); }
+.jb-tag { animation: jbfloat 6s ease-in-out infinite; }
+.jb-tag--b { animation-delay: -1.5s; }
+.jb-tag--c { animation-delay: -3s; }
+.jb-tag--d { animation-delay: -4.5s; }
+@keyframes jbfloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+}
+</style><header class="jb-nav "><div class="jb-nav__inner"><a href="https://preview--sublime-single-page.lovable.app/#home" class="jb-logo" aria-label="James Brooks home"><span class="jb-logo__dot"></span><span>jbrooks</span></a><nav class="jb-nav__links" aria-label="Primary"><a href="https://preview--sublime-single-page.lovable.app/#home">Home</a><a href="https://preview--sublime-single-page.lovable.app/#works">Main Works</a><a href="https://preview--sublime-single-page.lovable.app/#about">About</a><a href="https://preview--sublime-single-page.lovable.app/#contact">Contact</a></nav><div class="jb-nav__right"><button class="jb-iconbtn" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="18" height="18"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg></button><a href="https://preview--sublime-single-page.lovable.app/#contact" class="jb-btn jb-btn--primary jb-hide-sm" data-magnetic="true"><span>Hire Me</span><span class="jb-wave" aria-hidden="true">👋</span></a><button class="jb-iconbtn jb-show-sm" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="20" height="20"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button></div></div></header><section id="home" class="jb-hero"><div class="jb-container jb-hero__grid"><div class="jb-hero__art" aria-hidden="true"><div class="jb-orbit"><div class="jb-orbit__ring jb-orbit__ring--1"></div><div class="jb-orbit__ring jb-orbit__ring--2"></div><div class="jb-orbit__ring jb-orbit__ring--3"></div><div class="jb-orbit__core"></div><span class="jb-tag jb-tag--a">UI</span><span class="jb-tag jb-tag--b">UX</span><span class="jb-tag jb-tag--c">Product</span><span class="jb-tag jb-tag--d">Motion</span></div></div><div class="jb-hero__copy is-visible" data-reveal="true"><p class="jb-eyebrow">Hello there — I'm</p><h1 class="jb-display">I'm James Brooks,<br><span class="jb-accent">a UI/UX designer.</span></h1><div class="jb-hero__meta"><img class="jb-avatar" alt="James Brooks portrait" src="./James Brooks — UI_UX Designer Portfolio_files/photo-1531123897727-8f129e1688ce"><div><p class="jb-meta-title">Based in Lisbon</p><p class="jb-muted">Working remotely with teams worldwide</p></div><a href="https://preview--sublime-single-page.lovable.app/#works" class="jb-arrowlink">See selected work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></div></section><section id="works" class="jb-section"><div class="jb-container"><div class="jb-secthead" data-reveal="true"><p class="jb-eyebrow">Selected 2024 — 2025</p><h2 class="jb-h1">Main Works</h2></div><div class="jb-works"><article class="jb-work" data-reveal="true"><div class="jb-work__copy"><span class="jb-pill">iOS App</span><h3 class="jb-h2">Voo's Cinema</h3><p class="jb-muted">A streaming app concept that redesigns how you discover, save and book cinema tickets. Built around a calm, content-first interface.</p><a href="https://preview--sublime-single-page.lovable.app/case/voos-cinema" class="jb-arrowlink">Read case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div><a href="https://preview--sublime-single-page.lovable.app/case/voos-cinema" class="jb-work__media jb-work__media--phone "><img alt="Voo&#39;s Cinema preview" loading="lazy" src="./James Brooks — UI_UX Designer Portfolio_files/photo-1574375927938-d5a98e8ffe85"><span class="jb-work__overlay">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span><span class="jb-work__shine" aria-hidden="true"></span></a></article><article class="jb-work" data-reveal="true"><div class="jb-work__copy"><span class="jb-pill">Fintech Web App</span><h3 class="jb-h2">Credroad</h3><p class="jb-muted">Your trusted credit companion. A friendlier dashboard for tracking score, debt and goals — without the banking clutter.</p><a href="https://preview--sublime-single-page.lovable.app/case/credroad" class="jb-arrowlink">Read case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div><a href="https://preview--sublime-single-page.lovable.app/case/credroad" class="jb-work__media jb-work__media--desktop jb-work__media--alt"><img alt="Credroad preview" loading="lazy" src="./James Brooks — UI_UX Designer Portfolio_files/photo-1551288049-bebda4e38f71"><span class="jb-work__overlay">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span><span class="jb-work__shine" aria-hidden="true"></span></a></article><article class="jb-work" data-reveal="true"><div class="jb-work__copy"><span class="jb-pill">Productivity</span><h3 class="jb-h2">Suplan</h3><p class="jb-muted">A planner that turns the chaos of a creator's week into a calm, single column. Light gestures, big type, zero noise.</p><a href="https://preview--sublime-single-page.lovable.app/case/suplan" class="jb-arrowlink">Read case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div><a href="https://preview--sublime-single-page.lovable.app/case/suplan" class="jb-work__media jb-work__media--phone "><img alt="Suplan preview" loading="lazy" src="./James Brooks — UI_UX Designer Portfolio_files/photo-1517694712202-14dd9538aa97"><span class="jb-work__overlay">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span><span class="jb-work__shine" aria-hidden="true"></span></a></article><article class="jb-work" data-reveal="true"><div class="jb-work__copy"><span class="jb-pill">Travel iOS App</span><h3 class="jb-h2">Placever</h3><p class="jb-muted">Discover places worth slowing down for. A map-first travel companion with hand-curated stops and clean cards.</p><a href="https://preview--sublime-single-page.lovable.app/case/placever" class="jb-arrowlink">Read case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div><a href="https://preview--sublime-single-page.lovable.app/case/placever" class="jb-work__media jb-work__media--phone jb-work__media--alt"><img alt="Placever preview" loading="lazy" src="./James Brooks — UI_UX Designer Portfolio_files/photo-1502920917128-1aa500764cbd"><span class="jb-work__overlay">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span><span class="jb-work__shine" aria-hidden="true"></span></a></article></div></div></section><section class="jb-section jb-section--tight"><div class="jb-container"><div class="jb-secthead" data-reveal="true"><p class="jb-eyebrow">Side quests</p><h2 class="jb-h1">Other Works</h2></div><div class="jb-other"><a href="https://preview--sublime-single-page.lovable.app/#contact" class="jb-tile" data-reveal="true"><img alt="Lumen Skincare" loading="lazy" src="./James Brooks — UI_UX Designer Portfolio_files/photo-1556228720-195a672e8a03"><span>Lumen Skincare</span><span class="jb-tile__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a><a href="https://preview--sublime-single-page.lovable.app/#contact" class="jb-tile" data-reveal="true"><img alt="CH — Studio Brand" loading="lazy" src="./James Brooks — UI_UX Designer Portfolio_files/photo-1505691938895-1758d7feb511"><span>CH — Studio Brand</span><span class="jb-tile__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a><a href="https://preview--sublime-single-page.lovable.app/#contact" class="jb-tile" data-reveal="true"><img alt="Northwind Banner" loading="lazy" src="./James Brooks — UI_UX Designer Portfolio_files/photo-1551836022-d5d88e9218df"><span>Northwind Banner</span><span class="jb-tile__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a><a href="https://preview--sublime-single-page.lovable.app/#contact" class="jb-tile" data-reveal="true"><img alt="Atelier Editorial" loading="lazy" src="./James Brooks — UI_UX Designer Portfolio_files/photo-1521572163474-6864f9cf17ab"><span>Atelier Editorial</span><span class="jb-tile__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a></div></div></section><section class="jb-section"><div class="jb-container"><div class="jb-secthead" data-reveal="true"><p class="jb-eyebrow">What I do</p><h2 class="jb-h1">Skills &amp; Tools</h2></div><div class="jb-skills"><div class="jb-skills__col"><div class="jb-skill" data-reveal="true"><div class="jb-skill__icon">◍</div><h4 class="jb-h3">Design</h4><p class="jb-muted">Product design, design systems, motion direction and visual identity work. I help teams ship interfaces that feel quiet, considered and on-brand.</p></div><div class="jb-skill" data-reveal="true"><div class="jb-skill__icon">◍</div><h4 class="jb-h3">Building</h4><p class="jb-muted">I prototype in Framer and ship production-ready React with Tailwind. Comfortable pairing with engineers and contributing to component libraries.</p></div><div class="jb-skill" data-reveal="true"><div class="jb-skill__icon">◍</div><h4 class="jb-h3">Enhancing</h4><p class="jb-muted">Usability audits, micro-interactions, accessibility passes and onboarding flows — the small details that push a good product to a great one.</p></div></div><div class="jb-tools" data-reveal="true"><div class="jb-tools__group"><p class="jb-eyebrow">UI</p><ul><li><span>•</span>Figma</li><li><span>•</span>Sketch</li><li><span>•</span>Adobe XD</li><li><span>•</span>Photoshop</li></ul></div><div class="jb-tools__group"><p class="jb-eyebrow">Building</p><ul><li><span>•</span>Webflow</li><li><span>•</span>Framer</li><li><span>•</span>Lovable</li><li><span>•</span>React + Tailwind</li></ul></div><div class="jb-tools__group"><p class="jb-eyebrow">UX</p><ul><li><span>•</span>Maze</li><li><span>•</span>Lyssna</li><li><span>•</span>Notion</li><li><span>•</span>Linear</li></ul></div></div></div></div></section><section class="jb-section jb-section--tight"><div class="jb-container"><div class="jb-quotes"><figure class="jb-quote" data-reveal="true"><blockquote>"James turned a messy brief into a beautifully calm product. Engineers loved the handoff."</blockquote><figcaption><div class="jb-quote__avatar">SL</div><div><p class="jb-meta-title">Sara Lin</p><p class="jb-muted">PM, Northwind</p></div></figcaption></figure><figure class="jb-quote" data-reveal="true"><blockquote>"Rare designer who can hold the whole product in his head and still sweat the pixels."</blockquote><figcaption><div class="jb-quote__avatar">MD</div><div><p class="jb-meta-title">Marc Devlin</p><p class="jb-muted">Founder, Suplan</p></div></figcaption></figure><figure class="jb-quote" data-reveal="true"><blockquote>"Our retention curve bent the week we shipped his redesign. Quiet, confident work."</blockquote><figcaption><div class="jb-quote__avatar">AR</div><div><p class="jb-meta-title">Ana Ribeiro</p><p class="jb-muted">Lead, Voo</p></div></figcaption></figure><figure class="jb-quote" data-reveal="true"><blockquote>"Tight systems, great communication, zero ego. The full package."</blockquote><figcaption><div class="jb-quote__avatar">YO</div><div><p class="jb-meta-title">Yusuf Okafor</p><p class="jb-muted">CTO, Credroad</p></div></figcaption></figure></div></div></section><section class="jb-cv"><div class="jb-container jb-cv__inner"><p><span class="jb-cv__label">CV</span> View my experience as PDF</p><a href="https://preview--sublime-single-page.lovable.app/#contact" class="jb-btn jb-btn--ghost-dark">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></section><section id="about" class="jb-section"><div class="jb-container"><div class="jb-secthead" data-reveal="true"><p class="jb-eyebrow">The person</p><h2 class="jb-h1">About Me</h2></div><div class="jb-about"><div class="jb-about__intro" data-reveal="true"><h3 class="jb-h2">I'm James Brooks,<br><span class="jb-accent">a UI/UX designer.</span></h3><img class="jb-about__photo" alt="James Brooks" src="./James Brooks — UI_UX Designer Portfolio_files/photo-1500648767791-00dcc994a43e"></div><div class="jb-about__body" data-reveal="true"><p>I've spent the last seven years designing products for startups and studios across Europe and the US — focusing on calm, considered interfaces that respect attention and ship quickly.</p><p class="jb-muted">I care a lot about typography, motion, and the small interaction details that make software feel alive without getting in the way.</p><div class="jb-jobs"><p class="jb-eyebrow">Recent jobs</p><div class="jb-jobs__row"><span>Senior Product Designer</span><span class="jb-muted">Northwind</span><span class="jb-muted">2023 — Now</span></div><div class="jb-jobs__row"><span>UI/UX Designer</span><span class="jb-muted">Voo</span><span class="jb-muted">2021 — 2023</span></div><div class="jb-jobs__row"><span>Freelance Designer</span><span class="jb-muted">Self</span><span class="jb-muted">2018 — 2021</span></div></div></div></div></div></section><section id="contact" class="jb-section"><div class="jb-container"><div class="jb-contact" data-reveal="true"><div><p class="jb-eyebrow">Let's talk</p><h3 class="jb-h2">Let me help with a great<br>visual solution for your business.</h3></div><div class="jb-contact__cta"><p class="jb-accent jb-contact__title">Contact Me</p><div class="jb-contact__buttons"><a class="jb-btn jb-btn--primary" href="https://preview--sublime-single-page.lovable.app/#contact" data-magnetic="true">Book a Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="jb-btn jb-btn--ghost" href="mailto:hello@jamesbrooks.com">Send Message</a></div><p class="jb-muted jb-contact__or">or write at</p><div class="jb-contact__socials"><a href="https://preview--sublime-single-page.lovable.app/#contact">Dribbble</a><a href="https://preview--sublime-single-page.lovable.app/#contact">Behance</a><a href="https://preview--sublime-single-page.lovable.app/#contact">Twitter</a><a href="https://preview--sublime-single-page.lovable.app/#contact">LinkedIn</a></div></div></div><div class="jb-watermark-wrap" aria-hidden="true"><p class="jb-watermark">hello@jamesbrooks.com&nbsp;&nbsp;·&nbsp;&nbsp;hello@jamesbrooks.com&nbsp;&nbsp;·&nbsp;&nbsp;</p></div></div></section><footer class="jb-footer"><div class="jb-container jb-footer__inner"><p class="jb-muted">© 2026 James Brooks</p><p class="jb-muted">Designed &amp; built with care.</p></div></footer></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
